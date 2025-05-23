@@ -1,0 +1,18 @@
+[project]
+name = "tracing-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langsmith>=0.3.42",
+    "openai-agents>=0.0.16",
+]
+
+[project.scripts]
+tracing-agent = "tracing_agent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
